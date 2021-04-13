@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./rsvp.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>RSVP</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <h1><a href="../homePage/home.html">home.</a></h1>
+      <div class="burger">
+        <div class="burger-lines hide">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a style="color: rgb(143, 38, 0)" href="#">RSVP</a></li>
+          <li><a href="../travelPage/travel.html">TRAVEL</a></li>
+          <li><a href="../registryPage/registry.html">REGISTRIES</a></li>
+          <li><a href="../ourStoryPage/ourStory.html">STORY</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h3>
+        Please fill out the form below to confirm your reservation. We
+        appreciate your attendance on this special day, and look forward to
+        celebrating it with you!
+      </h3>
+
+      <form action="">
+        <div class="name">
+          <div class="first-name">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required />
+          </div>
+
+          <div class="last-name">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required />
+          </div>
+        </div>
+
+        <div class="confirmation">
+          <p>Please confirm your attendance.</p>
+          <div class="check-boxes">
+            <div class="check-box1">
+              <label for="yes-confirm">Yes, I will be in attendance.</label>
+              <input type="checkbox" id="yesBox" />
+            </div>
+            <div class="check-box2">
+              <label for="no-confirm"
+                >Unfortunately, I will not be able to attend.</label
+              >
+              <input type="checkbox" id="noBox" />
+            </div>
+          </div>
+        </div>
+
+        <div class="para-box">
+          <label for="para-box">
+            Please let us know of any special needs or accomodations.</label
+          >
+          <textarea name="comments" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <button class="submit-btn">SEND</button>
+      </form>
+    </main>
+    <footer>
+      <div>&copy; Abel Designs</div>
+
+      <div>
+        <a href="http://www.abelgarrido.cf/" target="_black">contact</a>
+      </div>
+    </footer>
+  </body>
+  <!-- scripts -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+    integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./rsvp.js"></script>
+</html>
