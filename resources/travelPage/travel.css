@@ -130,10 +130,32 @@ footer {
   display: flex;
   height: 5vh;
   justify-content: space-evenly;
-  border-top: 2px solid;
+  border-bottom: 10px solid black;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
+.line {
+  width: 80%;
+  height: 0.2rem;
+  background: gray;
+}
+
+.copyright {
+  width: 50%;
+}
+
+.contact-info {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
 footer a {
-  color: blue;
+  color: rgb(7, 7, 7);
+}
+
+footer img {
+  height: 1rem;
+  width: 1rem;
 }
