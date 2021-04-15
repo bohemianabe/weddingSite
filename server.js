@@ -3,6 +3,8 @@ const app = express();
 // to send email of the response
 const nodemailer = require("nodemailer");
 const PORT = process.env.PORT || 8080;
+// dotenv
+require("dotenv").config();
 
 // middleware
 app.use(express.static("resources"));
@@ -21,8 +23,8 @@ app.post("/", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "agarrido84@gmail.com",
-      pass: "port_City#2020",
+      user: process.env.GMAIL_USERNAME,
+      pass: process.env.GMAIL_PASSWD,
     },
   });
 
