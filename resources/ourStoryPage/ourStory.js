@@ -17,7 +17,7 @@ function animateSlides() {
       scrollTrigger: {
         trigger: slide,
         start: "top center",
-        markers: true,
+        // markers: true,
         toggleActions: "play none none none",
       },
     });
@@ -32,7 +32,7 @@ function animateSlides() {
       scrollTrigger: {
         trigger: nav,
         start: "top center",
-        markers: true,
+        // markers: true,
         toggleActions: "play none none none",
       },
     });
