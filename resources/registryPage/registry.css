@@ -6,15 +6,20 @@
 
 body {
   /* background: linear-gradient(white, rgb(223, 109, 128)); */
+
   color: rgb(48, 48, 48);
   overflow-x: hidden;
   height: 100vh;
 }
 
-/* header section */
+@media only screen and (max-width: 850px) {
+  body {
+    height: auto;
+  }
+}
 
 .nav-header {
-  height: 10vh;
+  height: 5rem;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -31,6 +36,13 @@ body {
   color: rgb(250, 79, 108);
   font-family: "Lobster", cursive;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-header {
+    font-size: 0.5rem;
+    height: 5%;
+  }
 }
 
 .line1 {
@@ -59,6 +71,24 @@ body {
   border-radius: 0.3rem;
 }
 
+@media only screen and (max-width: 850px) {
+  .line1 {
+    width: 2rem;
+    height: 0.3rem;
+    margin: 0.1rem 0rem;
+  }
+  .line2 {
+    width: 1rem;
+    height: 0.3rem;
+    margin: 0.1rem 0rem;
+  }
+  .line3 {
+    width: 0.5rem;
+    height: 0.3rem;
+    margin: 0.1rem 0rem;
+  }
+}
+
 .burger {
   display: flex;
 }
@@ -76,6 +106,16 @@ body {
 .nav-links li {
   margin-right: 1rem;
   color: rgb(250, 79, 108);
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav-links li {
+    margin-right: 0.5rem;
+  }
 }
 
 /* end of header */
@@ -96,6 +136,14 @@ body {
   font-weight: lighter;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .title h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.8rem;
+    line-height: 1.1;
+  }
 }
 
 main {
@@ -122,11 +170,18 @@ main {
 }
 
 .registry img {
-  height: 5rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
   object-fit: contain;
   border: 2px solid #eee3e3;
   box-shadow: 2px 2px 2px black;
+}
+
+@media only screen and (max-width: 850px) {
+  .registry img {
+    height: 7rem;
+    width: 10rem;
+  }
 }
 
 /* end of main section  */
@@ -164,4 +219,21 @@ footer a {
 footer img {
   height: 1rem;
   width: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+  footer {
+    height: 5%;
+  }
+  .copyright {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+  .contact-info {
+    width: 50%;
+  }
+  .line {
+    height: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
 }

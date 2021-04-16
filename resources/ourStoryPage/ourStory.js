@@ -17,8 +17,8 @@ function animateSlides() {
       scrollTrigger: {
         trigger: slide,
         start: "top center",
-        // markers: true,
-        toggleActions: "play none none reverse",
+        markers: true,
+        toggleActions: "play none none none",
       },
     });
     tl.fromTo(img, { scale: 1.8 }, { scale: 1 })
@@ -31,19 +31,19 @@ function animateSlides() {
       },
       scrollTrigger: {
         trigger: nav,
-        start: "top",
-        markers: false,
+        start: "top center",
+        markers: true,
         toggleActions: "play none none none",
       },
     });
     t2.fromTo(nav, { y: "-100%" }, { y: "0%" }, "-=0.5");
-    ScrollTrigger.create({
-      trigger: slide,
-      start: "top top",
-      end: "+=150px",
-      pinSpacing: false,
-      pin: true,
-    });
+    // ScrollTrigger.create({
+    //   trigger: slide,
+    //   start: "top top",
+    //   end: "+=150px",
+    //   pinSpacing: false,
+    //   pin: true,
+    // });
   });
   gsap.fromTo(
     title,

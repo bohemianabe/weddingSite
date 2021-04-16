@@ -10,10 +10,20 @@ body {
   color: rgb(48, 48, 48);
   overflow-x: hidden;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-/* header section  */
+@media only screen and (max-width: 850px) {
+  body {
+    height: auto;
+  }
+}
+
 .nav-header {
-  min-height: 10vh;
+  height: 5rem;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -30,6 +40,13 @@ body {
   color: rgb(250, 79, 108);
   font-family: "Lobster", cursive;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-header {
+    font-size: 0.5rem;
+    height: 5%;
+  }
 }
 
 .line1 {
@@ -58,6 +75,24 @@ body {
   border-radius: 0.3rem;
 }
 
+@media only screen and (max-width: 850px) {
+  .line1 {
+    width: 2rem;
+    height: 0.3rem;
+    margin: 0.1rem 0rem;
+  }
+  .line2 {
+    width: 1rem;
+    height: 0.3rem;
+    margin: 0.1rem 0rem;
+  }
+  .line3 {
+    width: 0.5rem;
+    height: 0.3rem;
+    margin: 0.1rem 0rem;
+  }
+}
+
 .burger {
   display: flex;
 }
@@ -77,7 +112,17 @@ body {
   color: rgb(250, 79, 108);
 }
 
-/* end of header section */
+@media only screen and (max-width: 850px) {
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav-links li {
+    margin-right: 0.5rem;
+  }
+}
+
+/* end of header */
 
 /* .story-img {
   display: flex;
@@ -94,6 +139,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .couple-desc {
@@ -128,6 +181,27 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 850px) {
+  .couple-img {
+    /* flex-basis: none;
+    height: 30%; */
+    padding-top: 1rem;
+  }
+  .couple-desc {
+    padding-left: 0;
+  }
+  .couple-desc h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+  }
+  .couple-desc p {
+    font-size: 0.8rem;
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
 }
 
 .story1-span {
@@ -197,4 +271,21 @@ footer a {
 footer img {
   height: 1rem;
   width: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+  footer {
+    height: 5%;
+  }
+  .copyright {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+  .contact-info {
+    width: 50%;
+  }
+  .line {
+    height: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
 }

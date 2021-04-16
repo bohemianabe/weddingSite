@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  background-position: center;
 }
 
 .banner ul {
@@ -63,6 +64,19 @@
   border-radius: 0.3rem;
 }
 
+@media only screen and (max-width: 850px) {
+  .nav a {
+    font-size: 0.8rem;
+  }
+  .nav {
+    width: 100%;
+    margin: 0;
+  }
+  .banner-title {
+    height: 50%;
+  }
+}
+
 .nav a {
   display: flex;
   justify-content: center;
@@ -79,6 +93,7 @@
   transition: all 0.5s ease-in-out;
   color: rgb(250, 79, 108);
   font-weight: 400;
+  border-bottom: 5px solid brown;
 }
 
 .nav li {
