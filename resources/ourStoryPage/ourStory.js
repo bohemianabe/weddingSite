@@ -37,13 +37,6 @@ function animateSlides() {
       },
     });
     t2.fromTo(nav, { y: "-100%" }, { y: "0%" }, "-=0.5");
-    // ScrollTrigger.create({
-    //   trigger: slide,
-    //   start: "top top",
-    //   end: "+=150px",
-    //   pinSpacing: false,
-    //   pin: true,
-    // });
   });
   gsap.fromTo(
     title,
